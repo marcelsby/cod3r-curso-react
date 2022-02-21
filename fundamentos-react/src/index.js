@@ -1,11 +1,12 @@
 import ReactDOM from 'react-dom';
+import './index.css';
 
-const text = 'Olá React!';
+const tag =  <strong>Olá React!</strong>;
 
 ReactDOM.render(
     <div>
         <strong>
-            {text}
+            {tag}
         </strong>
     </div>,
     document.getElementById('root')
