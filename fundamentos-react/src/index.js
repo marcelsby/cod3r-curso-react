@@ -1,6 +1,12 @@
 import ReactDOM from 'react-dom';
 
+const text = 'Olá React!';
+
 ReactDOM.render(
-    'Olá React!',
+    <div>
+        <strong>
+            {text}
+        </strong>
+    </div>,
     document.getElementById('root')
 );
