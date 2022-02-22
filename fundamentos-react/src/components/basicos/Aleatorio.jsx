@@ -12,7 +12,7 @@ export default function Aleatorio(props) {
 
     return (
         <>
-            <h2>Sorteador de números aleatórios</h2>
+            <h2>Sorteador de números</h2>
             <p>
                 <strong>Valor Mínimo: </strong>
                 {min}
