@@ -11,12 +11,22 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 const App = () => (
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#10 - Comunicação Indireta" color="#BA274A">
+                <IndiretaPai />
+            </Card>
+
+            <Card titulo="#09 - Comunicação Direta" color="#59323C">
+                <DiretaPai />
+            </Card>
+
             <Card titulo="#08 - Renderização Condicional" color="#643173">
                 <ParOuImpar numero={8} />
                 <UsuarioInfo usuario={{ nome: 'Fernando' }} />
@@ -40,22 +50,22 @@ const App = () => (
                 </Familia>
             </Card>
 
-            <Card titulo="#04 - Desafio Números Aleatórios" color="#fe4a49">
+            <Card titulo="#04 - Desafio Números Aleatórios" color="#FE4A49">
                 <Aleatorio min={0} max={10} />
             </Card>
 
-            <Card titulo="#03 - Fragmentos" color="#2ab7ca">
+            <Card titulo="#03 - Fragmentos" color="#2AB7CA">
                 <Fragmento />
             </Card>
 
             <Card
                 titulo="#02 - Componente com parâmetro (props)"
-                color="#fed166"
+                color="#FFA400"
             >
                 <ComParametro aluno="Pedro Silva" nota={8.5} />
             </Card>
 
-            <Card titulo="#01 - Primeiro Componente" color="#005b96">
+            <Card titulo="#01 - Primeiro Componente" color="#005B96">
                 <Primeiro />
             </Card>
         </div>
